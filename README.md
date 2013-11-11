@@ -1,6 +1,8 @@
 # Openwhenready
 
-TODO: Write a gem description
+Uses Launchy to open the browser to a specific URL whenever the URL is
+ready to accept tcp connections. Useful when waiting for a local
+webserver to finish loading.
 
 ## Installation
 
@@ -18,7 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This gem comes with a binary. Simply run it in Terminal. The command
+takes one or more URL arguments `openwhenready localhost:3000`.
 
 ## Contributing
 
