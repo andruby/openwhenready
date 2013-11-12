@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Openwhenready::VERSION
   spec.authors       = ["Andrew Fecheyr"]
   spec.email         = ["andrew@bedesign.be"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Open browser when URL is ready}
+  spec.summary       = %q{Uses launchy to open a given URL whenever that URL is ready to accept incoming connections}
+  spec.homepage      = "https://github.com/andruby/openwhenready"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "launchy"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end
